@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: rhtap-buildpack-demo-2
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads/cmoullia-tenant/rhtap-buildpack-demo-2/rhtap-buildpack-demo-2@sha256:63d2959204fa63e6b1b83136b149f379fbdaa7bb8e6eb775bbd4090abd774983
         name: my-nodejs
         ports:
         - containerPort: 3001
