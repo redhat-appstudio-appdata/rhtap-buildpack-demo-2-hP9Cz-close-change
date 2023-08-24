@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rhtap-buildpack-demo-2
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/cmoullia-tenant/rhtap-buildpack-demo-2/rhtap-buildpack-demo-2@sha256:63d2959204fa63e6b1b83136b149f379fbdaa7bb8e6eb775bbd4090abd774983
+        name: my-nodejs
+        resources: {}
+status: {}
